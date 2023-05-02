@@ -1,0 +1,22 @@
+package main
+
+import "fmt"
+
+type livro struct {
+	nome  string
+	autor string
+	ano   int
+}
+
+func main() {
+	l := livro{}
+	fmt.Print("qual é o nome do livro? ")
+	fmt.Scan(&l.nome)
+	fmt.Print("Qual é o nome do autor? ")
+	fmt.Scan(&l.autor)
+	fmt.Print("Qual é o ano de lançamento? ")
+	fmt.Scan(&l.ano)
+	fmt.Println(l.nome)
+	fmt.Println(l.autor)
+	fmt.Println(l.ano)
+}
