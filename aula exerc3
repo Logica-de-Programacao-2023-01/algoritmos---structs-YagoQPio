@@ -1,0 +1,23 @@
+package main
+
+import (
+	"fmt"
+)
+
+type aluno struct {
+	nome  string
+	idade int
+	notas float64
+}
+
+func main() {
+	a := aluno{}
+	var produto float64
+	for i := 0; i < 4; i++ {
+		fmt.Printf("digite a nota %d:", i+1)
+		fmt.Scan(&a.notas)
+		produto += a.notas
+	}
+	a.notas = produto / 4
+	fmt.Print(a.notas)
+}
