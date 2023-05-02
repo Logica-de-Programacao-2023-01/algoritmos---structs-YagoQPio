@@ -1,0 +1,25 @@
+package main
+
+import "fmt"
+
+func main() {
+	s := Retangulo{}
+	fmt.Printf("Qual é o valor da altura do retangulo?")
+	fmt.Scan(&s.altura)
+	fmt.Printf("Qual é o valor da largura do triangulo")
+	fmt.Scan(&s.largura)
+	resp := area(s.altura, s.largura)
+	fmt.Print(resp)
+
+}
+
+type Retangulo struct {
+	altura  float64
+	largura float64
+}
+
+func area(altura, largura float64) float64 {
+
+	return altura * largura
+
+}
